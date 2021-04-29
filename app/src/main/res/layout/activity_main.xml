@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/Logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/logo1" />
+
+    <TextView
+        android:id="@+id/Label1"
+        android:layout_below="@id/Logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtCustom"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:text="Tài khoản" />
+
+    <EditText
+        android:id="@+id/edtCustom"
+        android:layout_below="@id/Label1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/Label2"
+        android:layout_below="@id/edtCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/edtPass"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:text="Mật khẩu" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:textColor="@color/black"
+        android:layout_below="@id/Label2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/btOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPass"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="ĐĂNG NHẬP" />
+</RelativeLayout>
